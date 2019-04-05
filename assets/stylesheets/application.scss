@@ -1,5 +1,5 @@
 .title {
-  background-color: green;
+  background-color: #BB4430;
   color: white;
   font-size: 35px;
   font-family: cursive;
@@ -18,7 +18,7 @@
   flex-direction: column;
 
   .form-search {
-    background-color: red;
+    background-color: black;
     color: white;
     padding: 60px 60px 60px 120px;
     border: none;
@@ -36,7 +36,7 @@
     left: 60px;
     font-family: FontAwesome;
     font-size: 2.6em;
-    opacity: 0.4;
+    opacity: 0.9;
   }
 
   .selected-gif {
@@ -44,7 +44,7 @@
     display: flex;
     flex-grow: 1;
     height: calc(100vh - 132px);
-    background-color: orange;
+    background-color: #7EBDC2;
 
     .gif {
       max-width: 80%;
@@ -56,7 +56,7 @@
 
 .right-scene {
   flex: 0 0 40%;
-  background-color: blue;
+  background-color: #F3DFA2;
   overflow: scroll;
 
   .gif-list {
