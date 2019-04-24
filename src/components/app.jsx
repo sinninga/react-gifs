@@ -27,7 +27,6 @@ class App extends Component {
     });
   }
 
-
   render() {
     const gifs = [
       { id: "fjyqEaQOFUoIEcRy6t" },
@@ -38,11 +37,12 @@ class App extends Component {
       <div>
         <div className="left-scene">
           <SearchBar searchFunction={this.search} />
-          <div className="selected-gif">
+          <div className="selected-gif back">
             <Gif id={this.state.selectedGifId} />
           </div>
+          <button className="background-button">Click</button>
         </div>
-        <div className="right-scene">
+        <div className="right-scene back">
         <GifList gifs={this.state.gifs}/>
         </div>
       </div>
