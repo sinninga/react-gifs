@@ -27,11 +27,16 @@ class App extends Component {
     });
   }
 
+  handleClick = () => {
+    console.log('TODO');
+  }
+
   render() {
     const gifs = [
       { id: "fjyqEaQOFUoIEcRy6t" },
       { id: "q4YpWTDb6xEha" }
     ];
+
 
     return (
       <div>
@@ -40,10 +45,10 @@ class App extends Component {
           <div className="selected-gif back">
             <Gif id={this.state.selectedGifId} />
           </div>
-          <button className="background-button">Click</button>
+          <button className="background-button" onClick={this.handleClick()}>Click</button>
         </div>
         <div className="right-scene back">
-        <GifList gifs={this.state.gifs}/>
+          <GifList gifs={this.state.gifs}/>
         </div>
       </div>
     );
