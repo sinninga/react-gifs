@@ -45,10 +45,12 @@ class App extends Component {
       <div>
         <div className="left-scene">
           <SearchBar searchFunction={this.search} />
+          <div className="button-cont">
+            <button className="background-button" onClick={this.handleClick}>Change Background</button>
+          </div>
           <div className="selected-gif back">
             <Gif id={this.state.selectedGifId} />
           </div>
-          <button className="background-button" onClick={this.handleClick}>Click</button>
         </div>
         <div className="right-scene back">
           <GifList gifs={this.state.gifs}/>
