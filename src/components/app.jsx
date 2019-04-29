@@ -28,7 +28,10 @@ class App extends Component {
   }
 
   handleClick = () => {
-    console.log('TODO');
+    const comps = document.getElementsByClassName('back');
+    Object.keys(comps).forEach(function (key){
+      console.log(comps[key]);
+    });
   }
 
   render() {
@@ -45,7 +48,7 @@ class App extends Component {
           <div className="selected-gif back">
             <Gif id={this.state.selectedGifId} />
           </div>
-          <button className="background-button" onClick={this.handleClick()}>Click</button>
+          <button className="background-button" onClick={this.handleClick}>Click</button>
         </div>
         <div className="right-scene back">
           <GifList gifs={this.state.gifs}/>
