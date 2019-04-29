@@ -30,7 +30,7 @@ class App extends Component {
   handleClick = () => {
     const comps = document.getElementsByClassName('back');
     Object.keys(comps).forEach(function (key){
-      console.log(comps[key]);
+      comps[key].classList.toggle('white-back');
     });
   }
 
